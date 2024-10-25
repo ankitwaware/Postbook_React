@@ -2,7 +2,7 @@
   "name": "@repo/database",
   "version": "1.0.0",
   "exports": {
-    ".": "./src/client.ts"
+    "./client": "./src/client.ts"
   },
   "scripts": {
     "db:migrate:deploy": "prisma migrate deploy",
@@ -18,13 +18,13 @@
     "studio": "prisma studio"
   },
   "dependencies": {
-    "@prisma/client": "^5.10.2"
+    "@prisma/client": "^5.21.1"
   },
   "devDependencies": {
     "@repo/eslint-config": "^0.0.0",
     "@repo/typescript-config": "^0.0.0",
     "eslint": "^8.57.0",
-    "prisma": "^5.10.2",
+    "prisma": "^5.21.1",
     "rimraf": "^5.0.10",
     "tsup": "^8.3.0",
     "tsx": "^4.19.1",
